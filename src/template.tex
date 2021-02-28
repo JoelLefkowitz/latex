@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amsthm}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\textwidth 12cm
+\textheight 20cm
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\renewenvironment{abstract}
+ {\small
+  \begin{center}
+  \bfseries \abstractname\vspace{-.5em}\vspace{0pt}
+  \end{center}
+  \list{}{
+    \setlength{\leftmargin}{.5cm}%
+    \setlength{\rightmargin}{\leftmargin}%
+  }%
+  \item\relax}
+ {\endlist}
+
+\begin{document}
+\title{Existence and uniqueness of solutions for multidimensional nonlinear partial differential equations}
+\author{Joel Reuben Lefkowitz \\
+  \multicolumn{1}{p{.9\textwidth}}{\centering\emph{Undergraduate at The Univerity of Cambridge, Department of Engineering}}}
+\maketitle
+
+\begin{abstract}
+  Abstract.
+\end{abstract}
+\section{Introduction}
+Text.
+
+\begin{theorem}
+  Text.
+\end{theorem}
+
+\begin{theorem}[Pythagorean theorem]
+  \label{pythagorean}
+  \[ x^2 + y^2 = z^2 \]
+\end{theorem}
+
+A consequence of theorem \ref{pythagorean}:
+
+\begin{corollary}
+  Text.
+\end{corollary}
+
+\begin{lemma}
+  Text.
+\end{lemma}
+
+\begin{thebibliography}{99}
+
+  \bibitem{gasrah} G. Gasper, M. Rahman, {\it Basic Hypergeometric Series}, Cambridge University Press, Cambridge (1990).
+
+\end{thebibliography}
+\end{document}

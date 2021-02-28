@@ -1,0 +1,14 @@
+{
+  "name": "latex",
+  "description": "Latex template for mathematics",
+  "version": "1.0.0",
+  "portfolio": {
+    "project_type": "Community work",
+    "languages": [
+      "Latex"
+    ],
+    "status": [
+      "Stable"
+    ]
+  }
+}
