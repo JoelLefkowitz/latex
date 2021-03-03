@@ -1,0 +1,6 @@
+project: latex
+version: 1.0.0
+author: Joel Lefkowitz
+verbose_name: Latex
+html_title: Latex
+github_url: JoelLefkowitz/latex
