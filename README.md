@@ -1,6 +1,6 @@
 # Latex
 
-Latex template for mathematics
+Latex template for mathematics.
 
 ## Status
 
