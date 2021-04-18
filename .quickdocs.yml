@@ -1,6 +1,7 @@
 project: latex
-version: 1.0.0
+version: 0.1.0
 author: Joel Lefkowitz
-verbose_name: Latex
-html_title: Latex
-github_url: JoelLefkowitz/latex
+verbose_name: latex
+html_title: latex 
+github_url: https://github.com/JoelLefkowitz/latex
+apidoc_module_dir: latex
