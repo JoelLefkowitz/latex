@@ -1,0 +1,54 @@
+output_dir: .
+
+clear_top_level: true
+logical_grouping: true
+
+collections:
+  - common
+  - python
+
+loader_paths:
+  - docs
+
+protected:
+  - MANIFEST.in
+
+render_context:
+  project:
+    project_name: latex
+    version: 0.1.0
+
+    verbose_name: latex
+    description: Latex template for mathematics.
+
+    repository: https://github.com/JoelLefkowitz/latex
+    codacy_id: 6c16c26db4424b2a92fa96bc09c91dac
+
+    inserts:
+      - usage.md
+
+  author:
+    author: Joel Lefkowitz
+    author_email: joellefkowitz@hotmail.com
+    author_github_handle: joellefkowitz
+
+  package:
+    is_pypi_package: true
+    package_name: latex
+
+  portfolio:
+    is_portfolio: true
+    status_level: 5
+
+    languages:
+      - Python
+
+    frameworks:
+      - Jinja
+
+    paradigms:
+      - Object oriented programming
+
+  public_keys:
+    travis_pypi: hKYSpEpKXgzgGkDfG2WeyNhanNDZG3Zsd/c5NUMhSQDNOxDEb9ZvSkitOnQiy1CDLwImv7IF3XPEeFqHqjgpebWqEwn70w+7SpsYoHZynhiLz5sE1uxaWP4uq5SW7KCSP1CLx1spibaYjr2NCJ6rhXy2jAR3DVTt9xqbSGuCuXE0uxYXL/WzCwvLu+BZ/2BqI2tMpWJcPc8NTuhFWQ3gMur0VSPATGmmZBFXRwWFM4VOP0y9IS5+SPn96D2P6Gd7nBumW++4xE92/un7JoVJuJXwXgbOs83fO+JInx2uOD3D4t17YbqTSLtcl4FT/l77Qf25igbX4MA9qKahP65u7jwLmYpYN0kAx8eyVIoDxsFQ2IalDJCS+pO8scLp219YtO5yauCI+5hC3j7m/H0lKO4Na+aEhCbAfIVeFP97Vm9H+gHJm8detpJt9lVBUNyJyKBiOT/gkW+ukIluRDsXn7K7mln4OpIYal8Ux5I6p/yB8uwE8C6wZg3Ls10njva1GTv2RLrrNFlmvK2Gfi1HLxLGUS+0OLbD5Fng+bfG6zja6VTu6qaziv5zfIk/1GXVdHMNTug6DY/N8z6FH9g+RiLS4ZQI7ZXrwBlqGUxSqRU8+UohaDShtFmrOtrYjVOl0Yd0N3WtpYoEB3NALQir22K50f4FgyUhJ2lizlnPfts=
+    travis_codacy: JUxE0/S/qL3aC+LR4ir1YNsUvCFiROWlujyRnWWTgCyFS0JZ8bkGx6uxXD4azZp6GRh5HmstsDdCYoWFOuXia0zF6rua1lbCrp/ZQN4BC3FKJu4TB0/ZKClXWBvWwG8w6d/Oy70oxCgC1R7NSFbziZBJlJgBb3iK4YPLAq7Ecy7McvFrYzQthDKUb6sB4sCuzuHdGeE9DXQOY4t+IgUv5q1dKtkPBsm2j1IILjro2tp54PQnOVKOGVbDA0M9zlVGB/wDAVIE9smKY3QXMizuSLGYsDGi+ykT71a0euL6LxtAm/jt1gjCcsSChQ3b3FvVwwJD2Kk60WWUYTMI4iByO0Lx399C/DKpLz8qqDxldBA8RcCK3Iu7T023gHSXHeSHVG4Fmu9G+6JIJ5lfGSEzepIhfe7Wewbx15ymKaRxWRaUwDJH3aIEwH5fkx7fGTZH2WVfK/kj66eTpG+MoW9M6Q43sWmVfvwW5PcPCB/EbN0MuqmnC1pHn8NysZqRVJMMG7pltAEbPQ1iurIbyeSZNgYUSpnvCOfHOrBfJ7R4izXe6usgA5cXge5zMkdpuDA1d92ZQVBznQphCUf4e5y0jIl1faiCFst0+4e1j4y/FxkdFMUJEzW+FqjbB0CKyfdzvqGH6Va9ufpE1HD2uEwrvekiUFpuZbOrd6iha9fW0bI=
