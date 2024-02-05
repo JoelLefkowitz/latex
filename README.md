@@ -2,20 +2,13 @@
 
 Latex template for mathematics.
 
-## Status
+![Review](https://img.shields.io/github/actions/workflow/status/JoelLefkowitz/latex/review.yml)
+![Quality](https://img.shields.io/codacy/grade/6c16c26db4424b2a92fa96bc09c91dac)
+![Coverage](https://img.shields.io/codacy/coverage/6c16c26db4424b2a92fa96bc09c91dac)
 
-| Source     | Shields                                                                                                            |
-| ---------- | ------------------------------------------------------------------------------------------------------------------ |
-| Project    | ![release][release_shield] ![license][license_shield] ![dependents][dependents_shield]                             |
-| Health     | ![travis][travis_shield] ![codacy][codacy_shield] ![coverage][coverage_shield] ![readthedocs][readthedocs_shield]  |
-| Repository | ![issues][issues_shield] ![pulls][pulls_shield]                                                                    |
-| Activity   | ![contributors][contributors_shield] ![monthly_commits][monthly_commits_shield] ![last_commit][last_commit_shield] |
+## Documentation
 
-## Installation
-
-```bash
-git clone https://github.com/JoelLefkowitz/latex
-```
+Documentation and more detailed examples are hosted on [Github Pages](https://joellefkowitz.github.io/latex).
 
 ## Usage
 
@@ -27,130 +20,64 @@ sh build.sh
 
 ## Example
 
-![Example][example]
-
-## Tests
-
-To run unit tests:
-
-```bash
-grunt tests:unit
-```
-
-To generate a coverage report:
-
-```bash
-grunt tests:coverage
-```
-
-## Documentation
-
-This repository's documentation is hosted on [readthedocs][readthedocs].
-
-To generate the sphinx configuration:
-
-```bash
-grunt docs:generate
-```
-
-Then build the documentation:
-
-```bash
-grunt docs:build
-```
+![Example](docs/example.png)
 
 ## Tooling
+
+### Tests
+
+To run tests:
+
+```bash
+npm run test
+```
+
+### Documentation
+
+To generate the documentation locally:
+
+```bash
+npm run docs
+```
+
+### Linters
 
 To run linters:
 
 ```bash
-grunt lint
+npm run lint
 ```
+
+### Formatters
 
 To run formatters:
 
 ```bash
-grunt format
+npm run format
 ```
 
-Before commiting new code:
+## Contributing
 
-```bash
-grunt precommit
-```
+Please read this repository's [Code of Conduct](CODE_OF_CONDUCT.md) which outlines our collaboration standards and the [Changelog](CHANGELOG.md) for details on breaking changes that have been made.
 
-This will run linters, formaters, generate a test coverage report and the sphinx configuration.
+This repository adheres to semantic versioning standards. For more information on semantic versioning visit [SemVer](https://semver.org).
 
-## Versioning
-
-This repository adheres to semantic versioning standards.
-For more inforamtion on semantic versioning visit [SemVer][semver].
-
-Bump2version is used to version and tag changes.
-For example:
+Bump2version is used to version and tag changes. For example:
 
 ```bash
 bump2version patch
 ```
 
-## Changelog
+### Contributors
 
-Please read this repository's [CHANGELOG](CHANGELOG.md) for details on changes that have been made.
-
-## Contributing
-
-Please read this repository's guidelines on [CONTRIBUTING](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
-## Contributors
-
-- **Joel Lefkowitz** - _Initial work_ - [Joel Lefkowitz][joellefkowitz]
-
-[![Buy Me A Coffee][coffee_button]][coffee]
+- [Joel Lefkowitz](https://github.com/joellefkowitz) - Initial work
 
 ## Remarks
 
 Lots of love to the open source community!
 
-![Be kind][be_kind]
-
-<!-- Github links -->
-
-[pulls]: https://github.com/JoelLefkowitz/imapper/pulls
-[issues]: https://github.com/JoelLefkowitz/imapper/issues
-[example]: https://github.com/JoelLefkowitz/latex/raw/master/example.png
-
-<!-- External links -->
-
-[readthedocs]: https://imapper.readthedocs.io/en/latest/
-[semver]: http://semver.org/
-[coffee]: https://www.buymeacoffee.com/joellefkowitz
-[coffee_button]: https://cdn.buymeacoffee.com/buttons/default-blue.png
-[be_kind]: https://media.giphy.com/media/osAcIGTSyeovPq6Xph/giphy.gif
-
-<!-- Acknowledgments -->
-
-[joellefkowitz]: https://github.com/JoelLefkowitz
-
-<!-- Project shields -->
-
-[release_shield]: https://img.shields.io/github/v/tag/joellefkowitz/imapper
-[license_shield]: https://img.shields.io/github/license/joellefkowitz/imapper
-[dependents_shield]: https://img.shields.io/librariesio/dependent-repos/pypi/imapper
-
-<!-- Health shields -->
-
-[travis_shield]: https://img.shields.io/travis/joellefkowitz/imapper
-[codacy_shield]: https://img.shields.io/codacy/coverage/imapper
-[coverage_shield]: https://img.shields.io/codacy/grade/imapper
-[readthedocs_shield]: https://img.shields.io/readthedocs/imapper
-
-<!-- Repository shields -->
-
-[issues_shield]: https://img.shields.io/github/issues/joellefkowitz/imapper
-[pulls_shield]: https://img.shields.io/github/issues-pr/joellefkowitz/imapper
-
-<!-- Activity shields -->
-
-[contributors_shield]: https://img.shields.io/github/contributors/joellefkowitz/imapper
-[monthly_commits_shield]: https://img.shields.io/github/commit-activity/m/joellefkowitz/imapper
-[last_commit_shield]: https://img.shields.io/github/last-commit/joellefkowitz/imapper
+<p align='center'>
+    <img width=200 height=200 src='https://media.giphy.com/media/osAcIGTSyeovPq6Xph/giphy.gif' alt='Be kind to your mind' />
+    <img width=200 height=200 src='https://media.giphy.com/media/KEAAbQ5clGWJwuJuZB/giphy.gif' alt='Love each other' />
+    <img width=200 height=200 src='https://media.giphy.com/media/WRWykrFkxJA6JJuTvc/giphy.gif' alt="It's ok to have a bad day" />
+</p>

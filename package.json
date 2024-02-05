@@ -1,21 +1,42 @@
 {
   "name": "latex",
   "description": "Latex template for mathematics.",
-  "version": "1.0.0",
+  "version": "0.1.0",
+  "private": false,
   "license": "MIT",
   "author": "Joel Lefkowitz",
-  "devDependencies": {
-    "grunt": "^1.3.0",
-    "grunt-cli": "^1.3.0"
-  },
-  "portfolio": {
-    "project_type": "Community work",
-    "homepage": "https://joellefkowitz-latex.readthedocs.io",
+  "repository": "https://github.com/joellefkowitz/latex",
+  "homepage": "https://joellefkowitz.github.io/latex",
+  "keywords": [
+    "latex",
+    "generator",
+    "templates"
+  ],
+  "metadata": {
+    "publisher": null,
     "languages": [
+      "TypeScript"
+    ],
+    "frameworks": [
       "Latex"
     ],
-    "status": [
-      "Stable"
-    ]
+    "paradigms": [
+      "Functional"
+    ],
+    "lifecycle": "Stable"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "lint": "cspell . --dot",
+    "format": "prettier . --write"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.0",
+    "cspell": "^8.0.0",
+    "husky": "^9.0.0",
+    "prettier": "^3.0.0",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.3.0",
+    "typescript": "^5.3.0"
   }
 }

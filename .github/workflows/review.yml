@@ -1,0 +1,16 @@
+name: Review
+
+on: [push, pull_request]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the source code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        uses: ./.github/actions/install
+
+      - name: Run linters
+        run: npm run lint
