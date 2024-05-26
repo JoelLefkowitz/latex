@@ -3,8 +3,20 @@
 Latex template for mathematics.
 
 ![Review](https://img.shields.io/github/actions/workflow/status/JoelLefkowitz/latex/review.yml)
+![Version](https://img.shields.io/pypi/v/latex)
+![Downloads](https://img.shields.io/pypi/dw/latex)
 ![Quality](https://img.shields.io/codacy/grade/6c16c26db4424b2a92fa96bc09c91dac)
 ![Coverage](https://img.shields.io/codacy/coverage/6c16c26db4424b2a92fa96bc09c91dac)
+
+## Example
+
+![Example](docs/example.png)
+
+## Installation
+
+```bash
+pip install latex
+```
 
 ## Documentation
 
@@ -18,18 +30,23 @@ Edit the source files as you like and run the build script:
 sh build.sh
 ```
 
-## Example
-
-![Example](docs/example.png)
-
 ## Tooling
+
+### Dependencies
+
+To install dependencies:
+
+```bash
+yarn install
+pip install .[all]
+```
 
 ### Tests
 
 To run tests:
 
 ```bash
-npm run test
+thx test
 ```
 
 ### Documentation
@@ -37,7 +54,7 @@ npm run test
 To generate the documentation locally:
 
 ```bash
-npm run docs
+thx docs
 ```
 
 ### Linters
@@ -45,7 +62,7 @@ npm run docs
 To run linters:
 
 ```bash
-npm run lint
+thx lint
 ```
 
 ### Formatters
@@ -53,7 +70,7 @@ npm run lint
 To run formatters:
 
 ```bash
-npm run format
+thx format
 ```
 
 ## Contributing
@@ -76,8 +93,8 @@ bump2version patch
 
 Lots of love to the open source community!
 
-<p align='center'>
+<div align='center'>
     <img width=200 height=200 src='https://media.giphy.com/media/osAcIGTSyeovPq6Xph/giphy.gif' alt='Be kind to your mind' />
     <img width=200 height=200 src='https://media.giphy.com/media/KEAAbQ5clGWJwuJuZB/giphy.gif' alt='Love each other' />
     <img width=200 height=200 src='https://media.giphy.com/media/WRWykrFkxJA6JJuTvc/giphy.gif' alt="It's ok to have a bad day" />
-</p>
+</div>

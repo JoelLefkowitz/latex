@@ -1,20 +1,47 @@
 {
   "language": "en",
-  "ignorePaths": [
-    ".git",
-    ".gitignore",
-    ".husky",
-    "coverage",
-    "dist",
-    "yarn-error.log"
-  ],
   "dictionaries": [
+    "aws",
     "bash",
     "en-gb",
+    "fullstack",
     "misc",
-    "node",
-    "softwareTerms",
-    "typescript"
+    "softwareTerms"
   ],
-  "words": ["autofix", "bumpversion", "codacy", "lefkowitz"]
+  "ignorePaths": [".git", "*.tex.j2"],
+  "words": [
+    "autoapi",
+    "autoflake",
+    "autosummary",
+    "bibitem",
+    "bumpversion",
+    "cobertura",
+    "codacy",
+    "debugpy",
+    "doctest",
+    "excalidraw",
+    "furo",
+    "giphy",
+    "grotesk",
+    "isort",
+    "lefkowitz",
+    "matplotlib",
+    "mypy",
+    "opengraph",
+    "pdflatex",
+    "pycache",
+    "pylint",
+    "pypa",
+    "pypi",
+    "pyproject",
+    "pytest",
+    "sdist",
+    "searchindex",
+    "sphinxext",
+    "toctree",
+    "trufflehog",
+    "undoc",
+    "venv",
+    "walkmate"
+  ]
 }

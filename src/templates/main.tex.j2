@@ -8,54 +8,48 @@
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{corollary}{Corollary}[theorem]
-\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{lemma}{Lemma}[theorem]
 
-\renewenvironment{abstract}
- {\small
+\renewenvironment{abstract} {
+  \small
   \begin{center}
   \bfseries \abstractname\vspace{-.5em}\vspace{0pt}
   \end{center}
-  \list{}{
+  
+  \list{} {
     \setlength{\leftmargin}{.5cm}%
     \setlength{\rightmargin}{\leftmargin}%
-  }%
-  \item\relax}
- {\endlist}
+  }
+
+  \item\relax
+ }
 
 \begin{document}
-\title{Title}
-\author{Joel Reuben Lefkowitz \\
-  \multicolumn{1}{p{.9\textwidth}}{\centering\emph{Graduate of The University of Cambridge, Department of Engineering}}}
+\title{ {{title}} }
+
+\author{ 
+    {{name}} \\ \multicolumn{1}{p{.9\textwidth}}{\centering\emph{ {{college}} }}
+}
+
 \maketitle
 
 \begin{abstract}
   Abstract.
 \end{abstract}
+
 \section{Introduction}
 Text.
 
-\begin{theorem}
-  Text.
-\end{theorem}
-
 \begin{theorem}[Pythagorean theorem]
-  \label{pythagorean}
   \[ x^2 + y^2 = z^2 \]
 \end{theorem}
 
-A consequence of theorem \ref{pythagorean}:
-
-\begin{corollary}
-  Text.
-\end{corollary}
-
 \begin{lemma}
-  Text.
+  \[ x^2 + y^2 \neq z^2 + 1 \]
 \end{lemma}
 
 \begin{thebibliography}{99}
-
-  \bibitem{gasrah} G. Gasper, M. Rahman, {\it Basic Hypergeometric Series}, Cambridge University Press, Cambridge (1990).
-
+    \bibitem{gasrah} G. Gasper, M. Rahman, {\it Basic Hypergeometric Series}, Cambridge University Press, Cambridge (1990).
 \end{thebibliography}
+
 \end{document}
