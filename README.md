@@ -10,7 +10,7 @@ Latex template for mathematics.
 
 ## Example
 
-![Example](docs/example.png)
+![Example](docs/images/example.png)
 
 ## Installation
 
