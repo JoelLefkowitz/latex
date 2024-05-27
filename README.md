@@ -12,7 +12,7 @@ Latex template for mathematics.
 
 ![Example](docs/images/example.png)
 
-## Installation
+## Installing
 
 ```bash
 pip install latex
