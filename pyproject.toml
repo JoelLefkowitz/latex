@@ -81,7 +81,7 @@ lint = [
     "npx cspell . --dot --gitignore",
     "pylint src --disable=C0114,C0115,C0116,C0411,C3001 --good-names=x,y,z",
     "mypy src --ignore-missing-import",
-    "trufflehog3",
+    "trufflehog3 -c .trufflehog3.yaml",
 ]
 
 format = [
