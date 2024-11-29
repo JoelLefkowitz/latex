@@ -7,7 +7,7 @@ from walkmate import tree
 
 project = "Latex"
 package = "latex"
-version = "0.3.0"
+version = "0.3.1"
 
 project_copyright = f"{date.today().year} Joel Lefkowitz"
 
