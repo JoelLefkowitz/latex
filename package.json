@@ -2,7 +2,6 @@
   "name": "latex",
   "description": "Latex template for mathematics.",
   "version": "0.2.0",
-  "private": false,
   "license": "MIT",
   "author": "Joel Lefkowitz",
   "repository": "https://github.com/joellefkowitz/latex",
@@ -12,6 +11,7 @@
     "generator",
     "templates"
   ],
+  "packageManager": "yarn@4.1.1",
   "metadata": {
     "publisher": null,
     "languages": [
@@ -27,6 +27,8 @@
   },
   "scripts": {
     "postinstall": "husky",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable",
     "lint": "cspell . --dot",
     "format": "prettier . --write"
   },
@@ -34,6 +36,7 @@
     "@types/node": "^18.11.0",
     "cspell": "^8.0.0",
     "husky": "^9.0.0",
+    "pinst": "^3.0.0",
     "prettier": "^3.0.0",
     "ts-node": "^10.9.2",
     "tslib": "^2.3.0",

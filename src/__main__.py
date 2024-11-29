@@ -1,17 +1,40 @@
-import os
-from .services.loaders import load_inputs, load_template
-from .services.renderers import render_pdf, render_template
-from tempfile import TemporaryDirectory
+import logging
+from .commands.build import build
+from .commands.init import init
+from .services.logging import set_log_format, set_log_level
+from docopt import docopt
+from importlib import metadata
+from rich.pretty import pretty_repr
+from textwrap import dedent
 
-root = os.path.normpath(os.path.join(__file__, "../.."))
+logger = logging.getLogger(__name__)
 
-dist = os.path.join(root, "dist")
-templates = os.path.join(root, "src/templates")
+cli = dedent(
+    """
+    Usage:
+        latex init  [options]
+        latex build [options]
+        
+    Options:
+        -t --template ...  Template file [default: template.tex.j2]
+        -i --inputs ...    Context variables file [default: inputs.json]
+        -o --output ...    Output file [default: article.pdf]
+        -h --help          Display the help screen
+        -d --debug         Enable debug logging
+        -q --quiet         Reduce logging output
+        -v --version       Print the package version
+    """
+)
 
 if __name__ == "__main__":
-    inputs = load_inputs(templates)
-    template = load_template(templates)
+    set_log_format()
+    inputs = docopt(cli, version=metadata.version("latex"))
 
-    with TemporaryDirectory() as build:
-        render_template(build, template, inputs)
-        render_pdf(build, dist)
+    set_log_level(inputs["--quiet"], inputs["--debug"])
+    logger.debug("Parsed the CLI inputs: %s", pretty_repr(inputs.copy()))
+
+    if inputs["init"]:
+        init()
+
+    if inputs["build"]:
+        build(inputs["--template"], inputs["--inputs"], inputs["--output"])

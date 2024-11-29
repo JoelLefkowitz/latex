@@ -3,8 +3,8 @@ build-backend = "hatchling.build"
 requires = ["hatchling"]
 
 [project]
-name = "latex"
-description = "Latex template for mathematics."
+name = "latex-jinja"
+description = "Latex templating with Jinja and PDF conversion."
 version = "0.2.0"
 
 keywords = ["latex", "maths", "template", "PDF"]
@@ -18,7 +18,7 @@ classifiers = [
 ]
 
 requires-python = ">=3.8"
-dependencies = ["jinja2~=3.0.0"]
+dependencies = ["docopt~=0.6.2", "rich~=13.9.4", "jinja2~=3.0.0"]
 
 [project.optional-dependencies]
 all = [
@@ -74,13 +74,13 @@ include = ["src/**/*.py"]
 packages = ["src"]
 
 [tool.hatch.build.targets.wheel.sources]
-src = ""
+src = "latex"
 
 [tool.thx.jobs]
 lint = [
     "npx cspell . --dot --gitignore",
-    "pylint src --disable=C0114,C0115,C0116,C0411,C3001",
-    "mypy -m src --ignore-missing-import",
+    "pylint src --disable=C0114,C0115,C0116,C0411,C3001 --good-names=x,y,z",
+    "mypy src --ignore-missing-import",
     "trufflehog3",
 ]
 

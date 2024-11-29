@@ -1,6 +1,6 @@
-# Latex
+# Latex Jinja
 
-Latex template for mathematics.
+Latex templating with Jinja and PDF conversion.
 
 ![Review](https://img.shields.io/github/actions/workflow/status/JoelLefkowitz/latex/review.yml)
 ![Version](https://img.shields.io/pypi/v/latex)
@@ -10,25 +10,69 @@ Latex template for mathematics.
 
 ## Example
 
+Copy the template files:
+
+```
+python -m latex-jinja init
+```
+
+```properties
+INFO Copied "inputs.json"
+INFO Copied "template.tex.j2"
+```
+
+This creates a [Jinja](https://jinja.palletsprojects.com) latex template and an inputs file:
+
+`template.tex.j2`
+
+```.j2
+\documentclass[12pt]{article}
+\begin{document}
+
+\title{ {{title}} }
+\maketitle
+
+...
+
+\end{document}
+```
+
+`inputs.json`
+
+```json
+{
+  "author": "Author",
+  "title": "Title"
+}
+```
+
+Run the Jinja templating engine and produce a PDF:
+
+```
+python -m latex-jinja build
+```
+
+```properties
+INFO Loaded inputs from "inputs.json"
+INFO Rendered the template "template.tex.j2
+INFO Created "article.pdf"
+```
+
+This will populate the template and produces a PDF:
+
 ![Example](docs/images/example.png)
 
 ## Installing
 
+Download the [TeX distribution](https://miktex.org/), this includes `pdflatex` which is used by this package.
+
 ```bash
-pip install latex
+pip install latex-jinja
 ```
 
 ## Documentation
 
 Documentation and more detailed examples are hosted on [Github Pages](https://joellefkowitz.github.io/latex).
-
-## Usage
-
-Edit the source files as you like and run the build script:
-
-```bash
-sh build.sh
-```
 
 ## Tooling
 
