@@ -7,7 +7,7 @@ name = "latex-jinja"
 description = "Latex templating with Jinja and PDF conversion."
 version = "0.2.0"
 
-keywords = ["latex", "maths", "template", "PDF"]
+keywords = ["latex", "jinja", "template", "PDF"]
 
 classifiers = [
     "License :: OSI Approved :: MIT License",

@@ -2,9 +2,9 @@
 
 Latex templating with Jinja and PDF conversion.
 
-![Review](https://img.shields.io/github/actions/workflow/status/JoelLefkowitz/latex/review.yml)
-![Version](https://img.shields.io/pypi/v/latex)
-![Downloads](https://img.shields.io/pypi/dw/latex)
+![Review](https://img.shields.io/github/actions/workflow/status/JoelLefkowitz/latex-jinja/review.yml)
+![Version](https://img.shields.io/pypi/v/latex-jinja)
+![Downloads](https://img.shields.io/pypi/dw/latex-jinja)
 ![Quality](https://img.shields.io/codacy/grade/6c16c26db4424b2a92fa96bc09c91dac)
 ![Coverage](https://img.shields.io/codacy/coverage/6c16c26db4424b2a92fa96bc09c91dac)
 

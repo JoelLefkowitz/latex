@@ -6,11 +6,6 @@
   "author": "Joel Lefkowitz",
   "repository": "https://github.com/joellefkowitz/latex",
   "homepage": "https://joellefkowitz.github.io/latex",
-  "keywords": [
-    "latex",
-    "generator",
-    "templates"
-  ],
   "packageManager": "yarn@4.1.1",
   "metadata": {
     "publisher": null,
